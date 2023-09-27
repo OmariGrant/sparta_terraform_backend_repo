@@ -20,3 +20,7 @@ variable "ec2_ami" {
 variable "ec2_type" {
   type = string
 }
+
+variable "s3_bucket" {
+  type = string
+}

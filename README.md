@@ -10,3 +10,24 @@
 - modules use variables from root .tfvars
 - use must pass variables as a variable if the module in root
 - variables must be declared at root and module level
+
+![Diagram of prerequisutes and infrastruture](Terraform%20Upskill.drawio.png)
+
+## Remote state
+
+To initialise the S3 remote backend populate the following variables in a file s3.conf.
+
+```
+access_key = ""
+secret_key = ""
+bucket = ""
+region = ""
+
+```
+
+Then run command
+
+```
+terraform init -backend-config="s3.conf"
+
+```

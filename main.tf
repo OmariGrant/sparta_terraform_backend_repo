@@ -18,3 +18,8 @@ module "aws_module" {
 module "github_module" { 
     source = "./modules/github"
 }
+
+terraform {
+  backend "s3" {
+  }
+}

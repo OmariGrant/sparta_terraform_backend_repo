@@ -1,0 +1,108 @@
+<mxfile host="app.diagrams.net" modified="2023-09-27T13:31:37.701Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="i8dd_hIR5jA01Yx3lLi8" version="21.8.2" type="google">
+  <diagram name="Page-1" id="rwtPDj13aSnf12wkppTk">
+    <mxGraphModel dx="954" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-26" value="Infrastructure User to EC2" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="35" y="680" width="756.5" height="169" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-4" value="EC2" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#F58534;gradientColor=none;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-26">
+          <mxGeometry x="680" y="48.5" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-5" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.virtual_private_cloud;fillColor=#F58534;gradientColor=none;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-26">
+          <mxGeometry x="220" y="59" width="79.5" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="jLyO_Udv1It9JPKQvmj9-26" source="jLyO_Udv1It9JPKQvmj9-6" target="jLyO_Udv1It9JPKQvmj9-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-6" value="Internet Gateway" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.internet_gateway;fillColor=#F58534;gradientColor=none;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-26">
+          <mxGeometry x="110" y="50" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="jLyO_Udv1It9JPKQvmj9-26" source="jLyO_Udv1It9JPKQvmj9-10" target="jLyO_Udv1It9JPKQvmj9-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-10" value="Security group&lt;br&gt;&lt;br&gt;Port 80 &amp;amp; 22 (inbound)" style="fillColor=none;strokeColor=#DD3522;verticalAlign=top;fontStyle=0;fontColor=#DD3522;whiteSpace=wrap;html=1;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-26">
+          <mxGeometry x="500" y="30" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="jLyO_Udv1It9JPKQvmj9-26" source="jLyO_Udv1It9JPKQvmj9-11" target="jLyO_Udv1It9JPKQvmj9-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-11" value="Subnet&lt;br&gt;&lt;br&gt;&lt;br&gt;Public Subnet" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_subnet;strokeColor=#879196;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#879196;dashed=0;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-26">
+          <mxGeometry x="340" y="39" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="jLyO_Udv1It9JPKQvmj9-26" source="jLyO_Udv1It9JPKQvmj9-5" target="jLyO_Udv1It9JPKQvmj9-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-16" value="A User" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/laptop_client.svg;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-26">
+          <mxGeometry width="45" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="jLyO_Udv1It9JPKQvmj9-26" source="jLyO_Udv1It9JPKQvmj9-17" target="jLyO_Udv1It9JPKQvmj9-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-17" value="The internet&lt;br&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_globe.svg;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-26">
+          <mxGeometry x="12" y="100" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="jLyO_Udv1It9JPKQvmj9-26" source="jLyO_Udv1It9JPKQvmj9-16" target="jLyO_Udv1It9JPKQvmj9-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-30" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="230.73" width="596.27" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-28" value="" style="group" vertex="1" connectable="0" parent="jLyO_Udv1It9JPKQvmj9-30">
+          <mxGeometry y="30" width="596.27" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-1" value="AWS IAM&lt;br&gt;Access Keys&lt;br&gt;Roles &amp;amp; Policies" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.iam;fillColor=#759C3E;gradientColor=none;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-28">
+          <mxGeometry y="10" width="42" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-2" value="Amazon S3" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-28">
+          <mxGeometry x="70" y="20" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-3" value="Github&lt;br&gt;Access token&lt;br&gt;A Repository" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/github-128.png" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-28">
+          <mxGeometry x="170" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-20" value="EC2&lt;br&gt;Public IP&lt;br&gt;SSH Access" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#F58534;gradientColor=none;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-28">
+          <mxGeometry x="310" y="10" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-24" value="Infrastructure As Code (IAC)" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://www.nicepng.com/png/detail/386-3869336_hashicorp-terraform-logo.png;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-28">
+          <mxGeometry x="420" y="10" width="176.27" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-29" value="Prerequisites" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-30">
+          <mxGeometry x="253.13" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jLyO_Udv1It9JPKQvmj9-31" target="jLyO_Udv1It9JPKQvmj9-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-34" value="Remote state" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jLyO_Udv1It9JPKQvmj9-33">
+          <mxGeometry x="-0.0665" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jLyO_Udv1It9JPKQvmj9-31" target="jLyO_Udv1It9JPKQvmj9-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-31" value="Infrastructure As Code (IAC)" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://www.nicepng.com/png/detail/386-3869336_hashicorp-terraform-logo.png;" vertex="1" parent="1">
+          <mxGeometry x="35" y="420" width="176.27" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-32" value="Amazon S3" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;" vertex="1" parent="1">
+          <mxGeometry x="83.13999999999999" y="260" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-40" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="280" y="400" width="386.25" height="168" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-35" value="Github Repository" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/github-128.png" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-40">
+          <mxGeometry x="258.25" y="40" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-36" value="EC2&lt;br&gt;Public IP&lt;br&gt;SSH Access" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#F58534;gradientColor=none;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-40">
+          <mxGeometry y="40" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-37" value="AWS VPC&lt;br&gt;with&lt;br&gt;Public Subnet &amp;amp;&lt;br&gt;Internet Access Gateway" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.virtual_private_cloud;fillColor=#F58534;gradientColor=none;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-40">
+          <mxGeometry x="138.25" y="50" width="79.5" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="jLyO_Udv1It9JPKQvmj9-39" value="Infrastructure built with Terraform" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="jLyO_Udv1It9JPKQvmj9-40">
+          <mxGeometry x="68.25" width="200" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
